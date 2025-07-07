@@ -30,7 +30,7 @@ form.addEventListener("input", event => {
 
 form.addEventListener("submit", event => { 
     event.preventDefault();
-    const isFormValid = formData !== "" && formData.message !== "";
+    const isFormValid = formData.email !== "" && formData.message !== "";
     if (!isFormValid) { 
         alert("All fields should be filled");
         return;
@@ -93,7 +93,7 @@ Object.assign(button.style, {
     fontWeight: 500,
     borderRadius: `${8}px`,
     height: `${40}px`,
-    innerWidth: `${95}px`,
+    width: `${95}px`,
     padding: `${8}px ${16}px`,
     backgroundColor: `#4e75ff`,
     border: `none`,
